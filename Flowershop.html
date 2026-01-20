@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flower Shop</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link href="flowershop.css" rel="stylesheet"/>
+
+</head>
+<body>
+  <div class="page-content">
+  <header>
+    <h1>Your Floral Sanctuary</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav" id="navbarTabs">
+
+        <li class="nav-item mx-3">
+          <a class="nav-link active" data-tab="home" href="#">Home</a>
+        </li>
+
+        <li class="nav-item mx-3">
+          <a class="nav-link" data-tab="shop" href="#">Shop</a>
+        </li>
+
+        <li class="nav-item mx-3">
+          <a class="nav-link" data-tab="about" href="#">About Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+<!-- HOME TAB -->
+  <section id="home" class="tab-content-section active">
+    <div class="hero">
+      <div class="container">
+        <h1>Celebrate Every Moment with Flowers</h1>
+        <p>Brighten someone's day with our handcrafted bouquets.</p>
+      </div>
+    </div>
+
+    <div class="featured-flowers py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Featured Flowers</h2>
+        <div class="row justify-content-center g-4">
+
+          <div class="col-md-4">
+            <div class="card flower-card shadow-sm">
+              <img src="https://i.pinimg.com/1200x/0b/04/c7/0b04c75706da1bdc012fbfdae80bf9c0.jpg" class="card-img-top" alt="Red Roses" />
+              <div class="card-body">
+                <h5 class="card-title">Red Roses</h5>
+                <p class="card-text">Classic symbol of love and passion</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card flower-card shadow-sm">
+              <img src="https://i.pinimg.com/1200x/80/60/5b/80605be53f4b3b5750ba30a092623177.jpg" class="card-img-top" alt="Sunflowers" />
+              <div class="card-body">
+                <h5 class="card-title">Sunflowers</h5>
+                <p class="card-text">Bring joy and warmth to any space</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card flower-card shadow-sm">
+              <img src="https://i.pinimg.com/1200x/34/da/e0/34dae0a5a1880aac1e1a83b7032a69ae.jpg" class="card-img-top" alt="Lilies" />
+              <div class="card-body">
+                <h5 class="card-title">Lilies</h5>
+                <p class="card-text">Elegant and fragrant for all occasion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--SHOP TAB-->
+  <section id="shop" class="tab-content-section">
+    <div class="container">
+      <h2>Order Your Flowers</h2>
+      <p>Select your preferred delivery date:</p>
+      <input type="text" id="datepicker" placeholder="Choose a date" class="mb-4" />
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card flower-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/0b/04/c7/0b04c75706da1bdc012fbfdae80bf9c0.jpg" class="card-img-top" alt="Red Roses" />
+            <div class="card-body">
+              <h5 class="card-title">Roses</h5>
+              <p class="card-text">Classic symbol of love and passion</p>
+                   <p class="price fw-bold">₱1,800.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card flower-card shadow-sm">
+            <img src="https://blooming.com.my/wp-content/uploads/2020/12/HT1002.jpg" class="card-img-top" alt="Tulips" />
+            <div class="card-body">
+              <h5 class="card-title">Tulips</h5>
+              <p class="card-text">Perfect blooms that express deep love</p>
+                   <p class="price fw-bold">₱2,000.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card flower-card shadow-sm">
+            <img src="https://betterflowers.ae/cdn/shop/products/beautiful-purple-orchids-bouquet-delivery-dubai.jpg?v=1591549570" class="card-img-top" alt="Orchid" />
+            <div class="card-body">
+              <h5 class="card-title">Orchid</h5>
+              <p class="card-text">Exotic beauty that adds sophistication</p>
+                   <p class="price fw-bold">₱2,200.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card flower-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/80/60/5b/80605be53f4b3b5750ba30a092623177.jpg" class="card-img-top" alt="Sunflowers" />
+            <div class="card-body">
+              <h5 class="card-title">Sunflowers</h5>
+              <p class="card-text">Bring joy and warmth to any space</p>
+                   <p class="price fw-bold">₱1,500.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card flower-card shadow-sm">
+            <img src="https://www.lunaflowers.co/cdn/shop/products/original_NpSbL3RYe8BzMk2etmvCPA1u5CFLvsnlqzdlYCph.jpg?v=1704770194" class="card-img-top" alt="Daisies" />
+            <div class="card-body">
+              <h5 class="card-title">Daisies</h5>
+              <p class="card-text">Simple charm that brightens every day</p>
+                   <p class="price fw-bold">₱1,200.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card flower-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/34/da/e0/34dae0a5a1880aac1e1a83b7032a69ae.jpg" class="card-img-top" alt="Lilies" />
+            <div class="card-body">
+              <h5 class="card-title">Lilies</h5>
+              <p class="card-text">Elegant and fragrant for all occasion</p>
+                   <p class="price fw-bold">₱1,800.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--ABOUT US TAB-->
+<section id="about" class="tab-content-section">
+  <div class="container text-center">
+    <h2 class="mb-3" style="color: #89b392; font-weight: 700;">About Our Shop</h2>
+    <p class="lead mb-4" style="font-style: italic; color: #555;">
+      Your Floral Sanctuary — Where every bloom tells a story.
+    </p>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-4 mt-5" style="background: linear-gradient(to bottom, #c4d5c8, #89b392);">
+  <!-- Your footer content here, e.g., copyright text -->
+  <p>&copy; 2023 Your Website. All rights reserved.</p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="flowershop.js"></script>
+
+</body>
+</html>
